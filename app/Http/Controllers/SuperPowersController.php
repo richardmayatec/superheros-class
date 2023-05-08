@@ -40,7 +40,7 @@ class SuperPowersController extends Controller
             'active' => 1
         ]);
 
-        return redirect()->route('superpowers.index');
+        return redirect()->route('superpowers.index')->with('message', 'Superpower created successfully!');
     }
 
     

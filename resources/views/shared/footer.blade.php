@@ -7,6 +7,15 @@
         </div>
     </div>
 </footer>
+<script src="{{ asset('js/jquery.min.js') }}"></script>
 <script src="{{ asset('js/bootstrap.bundle.min.js') }}"></script>
+<script src="{{ asset('js/jquery.dataTables.min.js') }}"></script>
+
+<script>
+$(document).ready(function () {
+    $('#datatable').DataTable();
+});
+</script>
+<!-- <script src="{{ asset('js/jquery.dataTables.min.js') }}"></script> -->
 </body>
 </html>

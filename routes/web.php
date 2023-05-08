@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\SuperPowersController;
+use App\Http\Controllers\RegistrosController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -30,5 +31,6 @@ Route::middleware('auth')->group(function () {
 });
 
 Route::resource('superpowers', SuperPowersController::class)->middleware('auth');
+Route::resource('registros', RegistrosController::class)->middleware('auth');
 
 require __DIR__.'/auth.php';

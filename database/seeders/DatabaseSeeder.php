@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use App\Models\Registros;
 
 class DatabaseSeeder extends Seeder
 {
@@ -22,5 +23,7 @@ class DatabaseSeeder extends Seeder
         $this->call([
             UsersSeeder::class
         ]);
+
+        Registros::factory(100)->create();
     }
 }
