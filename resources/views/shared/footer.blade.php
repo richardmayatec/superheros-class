@@ -16,6 +16,5 @@ $(document).ready(function () {
     $('#datatable').DataTable();
 });
 </script>
-<!-- <script src="{{ asset('js/jquery.dataTables.min.js') }}"></script> -->
 </body>
 </html>
